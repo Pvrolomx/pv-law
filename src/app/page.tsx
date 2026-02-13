@@ -24,20 +24,12 @@ const t: Record<string, Record<string, string>> = {
     areas_sub: "Comprehensive legal services for the international community",
     area_1_title: "Real Estate & Fideicomiso",
     area_1_desc: "Navigate Mexico's restricted zone property laws with confidence. Full fideicomiso setup, transfers, and due diligence.",
-    area_2_title: "Immigration & Residency",
-    area_2_desc: "Temporary and permanent residency, visa renewals, naturalization, and all INM procedures.",
-    area_3_title: "Business Formation",
-    area_3_desc: "Company incorporation, RFC registration, commercial permits, and ongoing compliance for foreign investors.",
-    area_4_title: "Litigation & Disputes",
-    area_4_desc: "Civil, commercial, and administrative litigation. We fight for your rights in Mexican courts.",
-    area_5_title: "Estate Planning & Wills",
-    area_5_desc: "Mexican wills, cross-border estate planning, probate proceedings, and asset protection.",
-    area_6_title: "Criminal Defense",
-    area_6_desc: "Immediate response for arrests and criminal matters. 24/7 availability for emergencies.",
-    area_7_title: "Family Law",
-    area_7_desc: "Binational divorce, child custody, alimony, and cross-border family disputes.",
-    area_8_title: "HOA & Condo Law",
-    area_8_desc: "Condominium regime disputes, HOA governance, maintenance fee collections, and assemblies.",
+    area_2_title: "Litigation & Disputes",
+    area_2_desc: "Civil, commercial, and administrative litigation. We fight for your rights in Mexican courts.",
+    area_3_title: "Criminal Defense",
+    area_3_desc: "Immediate response for arrests and criminal matters. 24/7 availability for emergencies.",
+    area_4_title: "HOA & Condo Law",
+    area_4_desc: "Condominium regime disputes, HOA governance, maintenance fee collections, and assemblies.",
     why_title: "Why Choose Us",
     why_sub: "What sets our firm apart",
     why_1_title: "Truly Bilingual",
@@ -132,20 +124,12 @@ const t: Record<string, Record<string, string>> = {
     areas_sub: "Servicios legales completos para la comunidad internacional",
     area_1_title: "Inmobiliario y Fideicomiso",
     area_1_desc: "Navega las leyes de zona restringida con confianza. Constitución de fideicomiso, transferencias y due diligence.",
-    area_2_title: "Migración y Residencia",
-    area_2_desc: "Residencia temporal y permanente, renovaciones de visa, naturalización y todos los trámites ante INM.",
-    area_3_title: "Constitución de Empresas",
-    area_3_desc: "Incorporación de sociedades, registro RFC, permisos comerciales y cumplimiento para inversionistas extranjeros.",
-    area_4_title: "Litigio y Disputas",
-    area_4_desc: "Litigio civil, mercantil y administrativo. Peleamos por tus derechos en tribunales mexicanos.",
-    area_5_title: "Testamentos y Sucesiones",
-    area_5_desc: "Testamentos mexicanos, planeación patrimonial transfronteriza, juicios sucesorios y protección de activos.",
-    area_6_title: "Defensa Penal",
-    area_6_desc: "Respuesta inmediata ante detenciones y asuntos penales. Disponibilidad 24/7 para emergencias.",
-    area_7_title: "Derecho Familiar",
-    area_7_desc: "Divorcio binacional, custodia de menores, pensiones alimenticias y disputas familiares transfronterizas.",
-    area_8_title: "Derecho Condominial",
-    area_8_desc: "Disputas de régimen condominal, gobernanza de HOA, cobro de cuotas de mantenimiento y asambleas.",
+    area_2_title: "Litigio y Disputas",
+    area_2_desc: "Litigio civil, mercantil y administrativo. Peleamos por tus derechos en tribunales mexicanos.",
+    area_3_title: "Defensa Penal",
+    area_3_desc: "Respuesta inmediata ante detenciones y asuntos penales. Disponibilidad 24/7 para emergencias.",
+    area_4_title: "Derecho Condominial",
+    area_4_desc: "Disputas de régimen condominal, gobernanza de HOA, cobro de cuotas de mantenimiento y asambleas.",
     why_title: "¿Por Qué Elegirnos?",
     why_sub: "Lo que nos distingue",
     why_1_title: "Verdaderamente Bilingües",
@@ -242,7 +226,7 @@ const icons: Record<string, React.ReactNode> = {
   whatsapp: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>,
 };
 
-const areaIcons = ["building", "passport", "briefcase", "scale", "document", "shield", "heart", "home"];
+const areaIcons = ["building", "scale", "shield", "home"];
 
 /* ─── Intersection Observer hook ─── */
 function useInView(threshold = 0.1) {
@@ -425,7 +409,7 @@ export default function Home() {
             <h2 className="text-4xl sm:text-5xl font-bold mt-3 text-[var(--navy)]" style={{ fontFamily: "var(--font-heading)" }}>{l.areas_title}</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {Array.from({ length: 8 }, (_, i) => (
+            {Array.from({ length: 4 }, (_, i) => (
               <div key={i} className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-500 border border-[var(--cream-dark)] hover:border-[var(--gold)]/30 hover:-translate-y-1">
                 <div className="w-14 h-14 rounded-xl bg-[var(--navy)]/5 group-hover:bg-[var(--gold)]/10 flex items-center justify-center mb-4 transition-colors text-[var(--navy)] group-hover:text-[var(--gold)]">
                   {icons[areaIcons[i]]}
