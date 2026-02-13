@@ -364,9 +364,11 @@ export default function Home() {
       </nav>
 
       {/* ─── HERO ─── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden noise-overlay">
-        {/* BG gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--navy-dark)] via-[var(--navy)] to-[var(--navy-light)]" />
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* BG image */}
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/hero-bg.png')" }} />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[var(--navy-dark)]/80 via-[var(--navy)]/60 to-[var(--navy-dark)]/85" />
         {/* Decorative elements */}
         <div className="absolute top-20 right-10 w-96 h-96 bg-[var(--gold)]/5 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-72 h-72 bg-[var(--gold)]/3 rounded-full blur-3xl" />
