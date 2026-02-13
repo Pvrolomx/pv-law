@@ -227,6 +227,7 @@ const icons: Record<string, React.ReactNode> = {
 };
 
 const areaIcons = ["building", "scale", "shield", "home"];
+const areaImages = ["/cards/card-realestate.png", "/cards/card-litigation.png", "/cards/card-criminal.png", "/cards/card-hoa.png"];
 
 /* ─── Intersection Observer hook ─── */
 function useInView(threshold = 0.1) {
@@ -410,16 +411,22 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {Array.from({ length: 4 }, (_, i) => (
-              <div key={i} className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-500 border border-[var(--cream-dark)] hover:border-[var(--gold)]/30 hover:-translate-y-1">
-                <div className="w-14 h-14 rounded-xl bg-[var(--navy)]/5 group-hover:bg-[var(--gold)]/10 flex items-center justify-center mb-4 transition-colors text-[var(--navy)] group-hover:text-[var(--gold)]">
-                  {icons[areaIcons[i]]}
+              <div key={i} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-[var(--cream-dark)] hover:border-[var(--gold)]/30 hover:-translate-y-1">
+                <div className="h-44 overflow-hidden relative">
+                  <img src={areaImages[i]} alt={l[`area_${i + 1}_title`]} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[var(--navy)]/60 to-transparent" />
+                  <div className="absolute bottom-3 left-4 w-10 h-10 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center text-white">
+                    {icons[areaIcons[i]]}
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold mb-2 text-[var(--navy)]" style={{ fontFamily: "var(--font-heading)" }}>
-                  {l[`area_${i + 1}_title`]}
-                </h3>
-                <p className="text-[var(--slate)] text-sm leading-relaxed">
-                  {l[`area_${i + 1}_desc`]}
-                </p>
+                <div className="p-5">
+                  <h3 className="text-lg font-bold mb-2 text-[var(--navy)]" style={{ fontFamily: "var(--font-heading)" }}>
+                    {l[`area_${i + 1}_title`]}
+                  </h3>
+                  <p className="text-[var(--slate)] text-sm leading-relaxed">
+                    {l[`area_${i + 1}_desc`]}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
